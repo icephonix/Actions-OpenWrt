@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build OpenWrt1907ubuntu-latest
+name: Build OpenWrt1907
 
 on: 
   release:
@@ -48,7 +48,7 @@ jobs:
 
     - name: Clone source code
       env: 
-        REPO_URL: https://github.com/icephonix/lede
+        REPO_URL: https://github.com/openwrt/openwrt
         REPO_BRANCH: master
       run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
 
